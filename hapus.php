@@ -1,8 +1,8 @@
 <?php
-$host = "localhost"; 
-$username = "root"; 
-$password = ""; 
-$database = "tokokue"; 
+$host = "localhost";
+$username = "root";
+$password = "";
+$database = "tokokue";
 
 $koneksi = new mysqli($host, $username, $password, $database);
 
@@ -18,10 +18,10 @@ if (isset($_GET['id'])) {
 
         if ($koneksi->query($sql) === true) {
             echo "<script>alert('Data berhasil dihapus'); window.location.href = 'index.php';</script>";
-            exit; 
+            exit;
         } else {
             echo "<script>alert('Error: " . $sql . '<br>' . $koneksi->error . "'); window.location.href = 'index.php';</script>";
-            exit; 
+            exit;
         }
     } else {
         echo "

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Manajemen Barang</title>
+    <title>Toko Kue</title>
 
     <style>
         body {
@@ -59,7 +59,7 @@
 </head>
 
 <body>
-    <h1>Manajemen Barang</h1>
+    <h1>Toko Kue</h1>
 
     <!-- Tambahkan tombol untuk tambah barang -->
     <a href="tambah.php"><button>Tambah Barang</button></a>
@@ -112,6 +112,7 @@
     $koneksi->close();
     echo '</table>';
     ?>
+
 </body>
 
 </html>
